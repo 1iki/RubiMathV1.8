@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   Navigate,
@@ -171,7 +171,7 @@ export default function App() {
   }, []);
 
   return (
-    <Router>
+    <Router basename="/">
       {dbError && (
         <div
           style={{
