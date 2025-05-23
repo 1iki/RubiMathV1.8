@@ -1,5 +1,6 @@
 {
-  "name": "rubimathv1.8",
+  "homepage": "https://1iki.github.io/RubimathV1.8",
+  "name": "rubimath",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +9,9 @@
     "start": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.4",
